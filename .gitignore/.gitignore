@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int anzahl = Convert.ToInt32(Console.ReadLine());
+            int x = 0;
+            string person="";
+            while (anzahl > x)
+            {
+                x=+1;
+                if (anzahl > 0)
+                {
+                    anzahl=anzahl-x;
+                    person="Patlu";
+                }
+                else if (anzahl==0)
+                {
+                    break;
+                }
+                if (anzahl > 0)
+                {
+                    anzahl=anzahl-x*2;
+                    person="Motu";
+                }
+                else if (anzahl==0)
+                {
+                    break;
+                }
+            }
+            Console.WriteLine(person);
+        }
+    }
+} 
